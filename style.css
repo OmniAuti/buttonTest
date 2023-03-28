@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(223, 223, 223);
+  background-color: #3b3b3b;
   font-family: "Montserrat";
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -28,7 +28,7 @@ section {
 .wrapper {
   background-color: #eee;
   width: fit-content;
-  height:fit-content;
+  height: fit-content;
   border-radius: 15px;
 }
 
@@ -42,16 +42,18 @@ section {
   position: relative;
   border: 1px solid #eee;
   background-color: #eee;
-  box-shadow:  5px 5px 2.5px rgba(200,200,200,.5), -2.5px -2.5px 2.5px rgba(200, 200, 200, 0.5);
-} 
+  box-shadow: 5px 5px 2.5px rgba(200, 200, 200, 0.5),
+    -2.5px -2.5px 2.5px rgba(200, 200, 200, 0.5);
+}
 
 #btn.shadow {
   transition: all linear 150ms;
- box-shadow: none;
+  box-shadow: none;
 }
 #btn.shadow.active-shadow {
   transition: all ease 150ms;
-  box-shadow: 5px 5px 2.5px rgba(0,0,0,.5), inset -2.5px -2.5px 2.5px rgba(200, 200, 200, 0.5)
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.5),
+    inset -2.5px -2.5px 2.5px rgba(200, 200, 200, 0.5);
 }
 
 #btn:hover {
@@ -77,7 +79,7 @@ section {
   overflow: hidden;
   opacity: 1;
   transition: none;
-} 
+}
 
 #btn:hover .inside-btn {
   opacity: 1;
@@ -88,10 +90,10 @@ section {
 .inside-btn p {
   position: absolute;
   font-size: 25px;
-  background-color: var(--gray); 
+  background-color: var(--gray);
+  text-shadow: 1px solid black;
 }
 
-#btn:hover .inside-btn p {
-  -webkit-text-stroke: 1px black;
+#btn:hover p {
+  -webkit-text-stroke: 0.5px black;
 }
-
